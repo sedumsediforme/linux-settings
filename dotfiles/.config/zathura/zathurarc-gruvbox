@@ -1,0 +1,75 @@
+map t scroll down
+map n scroll up
+map h scroll left
+map s scroll right
+map T feedkeys 10t
+map N feedkeys 10n
+
+map [index] t navigate_index down
+map [index] n navigate_index up
+map [index] h navigate_index collapse
+map [index] s navigate_index expand
+map [index] H navigate_index collapse-all
+map [index] S navigate_index expand-all
+
+map l search forward
+map L search backward
+
+map a adjust_window best-fit
+map A adjust_window width
+
+map b toggle_statusbar
+
+map ; feedkeys :
+map ` mark_evaluate
+
+map <Esc> quit
+
+set selection-clipboard clipboard
+set font "Iosevka Nerd Font Mono 11"
+set guioptions hv
+set adjust-open width
+set render-loading false
+
+# Recolor to dark
+set recolor-lightcolor          "#282828" # bg
+set recolor-darkcolor           "#ebdbb2" # fg
+set recolor                     "true"
+set recolor-keephue
+set recolor-reverse-video
+
+# Colors
+set notification-error-bg       "#282828" # bg
+set notification-error-fg       "#fb4934" # bright:red
+set notification-warning-bg     "#282828" # bg
+set notification-warning-fg     "#fabd2f" # bright:yellow
+set notification-bg             "#282828" # bg
+set notification-fg             "#b8bb26" # bright:green
+
+set completion-bg               "#504945" # bg2
+set completion-fg               "#ebdbb2" # fg
+set completion-group-bg         "#3c3836" # bg1
+set completion-group-fg         "#928374" # gray
+set completion-highlight-bg     "#83a598" # bright:blue
+set completion-highlight-fg     "#504945" # bg2
+
+# Define the color in index mode
+set index-bg                    "#504945" # bg2
+set index-fg                    "#ebdbb2" # fg
+set index-active-bg             "#83a598" # bright:blue
+set index-active-fg             "#504945" # bg2
+
+set inputbar-bg                 "#282828" # bg
+set inputbar-fg                 "#ebdbb2" # fg
+
+set statusbar-bg                "#504945" # bg2
+set statusbar-fg                "#ebdbb2" # fg
+
+set highlight-color             "#fabd2f" # bright:yellow
+set highlight-active-color      "#fe8019" # bright:orange
+
+set default-bg                  "#282828" # bg
+set default-fg                  "#ebdbb2" # fg
+set render-loading              true
+set render-loading-bg           "#282828" # bg
+set render-loading-fg           "#ebdbb2" # fg

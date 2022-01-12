@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+:root {
+	--night_color1: #282828;
+	--night_color2: #3C3836;
+	--night_color3: #50494;
+	--night_color4: #665C54;
+	
+	--snow_color1: #BDAE95;
+	--snow_color2: #D5C4A1;
+	--snow_color3: #EBDBB2;
+	
+	--frost_color1: #8EC07C;
+	--frost_color2: #83A598;
+	--frost_color3: #83A598;
+	--frost_color4: #458588;
+	
+	--aurora_color1: #FB4934;
+	--aurora_color2: #FE8019;
+	--aurora_color3: #FABD2F;
+	--aurora_color4: #B8BB26;
+	--aurora_color5: #D3869B;
+}
+
+@media (prefers-color-scheme: dark) {
+/* .Search {
+  color: var(--snow_color3);
+}
+.fullscreen{
+  background-color: var(--night_color1);
+} */
+} 
+
+@media (prefers-color-scheme: light) {
+.Search {
+  color: var(--night_color1);
+}
+.fullscreen{
+  background-color: var(--snow_color3);
+}
+}
+
+.Quote {
+  color: var(--aurora_color1);
+}
+.Time {
+  color: var(--snow_color2);
+}
+.Greeting {
+  color: var(--frost_color1);
+}5
