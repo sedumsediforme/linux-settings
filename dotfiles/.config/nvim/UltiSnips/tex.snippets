@@ -1,0 +1,125 @@
+snippet avui "Date"
+`date +%F`
+endsnippet
+
+snippet im "Math"
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet dm "Math"
+\[
+$1
+.\] $0
+endsnippet
+
+snippet a "Alpha"
+$\alpha$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet b "Beta"
+$\beta$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet g "Gamma"
+$\gamma$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet d "delta"
+$\delta$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet D "Delta"
+$\Delta$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet template-min "Plantilla minima"
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{$1}
+\author{DPV}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+$2
+
+
+
+
+\end{document}
+endsnippet
+
+snippet template-max "Plantilla completa"
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mhchem}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+\title{$1}
+\author{DPV}
+\date{}     
+       
+\begin{document}
+                
+\maketitle
+          
+$2
+  
+
+
+
+\end{document}
+endsnippet
+
+snippet fig "Inserir figura svg"
+\begin{figure}[ht]
+    \centering
+    \incfig{$1}
+    \caption{$1}
+    \label{fig:$1}
+\end{figure}
+
+$2
+endsnippet
