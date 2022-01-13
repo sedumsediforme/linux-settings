@@ -92,6 +92,8 @@ snippet template-max "Plantilla completa"
 \usepackage{pdfpages}
 \usepackage{transparent}
 
+\usepackage{graphicx}
+
 \newcommand{\incfig}[1]{%
     \def\svgwidth{\columnwidth}
     \import{./figures/}{#1.pdf_tex}
@@ -122,4 +124,27 @@ snippet fig "Inserir figura svg"
 \end{figure}
 
 $2
+endsnippet
+
+snippet table "Inserir taula"
+\begin{table}[!ht]
+    \centering
+    \caption{$1}
+    \begin{tabular}{|l|l|l|}
+    \hline
+        1A$2 & 1B & 1C \\ \hline
+        2A & 2B & 2C \\ \hline 
+        3A & 3B & 3C \\ \hline 
+    \end{tabular}
+    \label{$1}
+\end{table}
+endsnippet
+
+snippet img "Inserir imatge"
+\begin{figure}                                   
+  \centering                                                  
+  \includegraphics[width=\linewidth]{figures/$1}  
+  \caption{$1}  
+  \label{fig:$1}
+\end{figure}
 endsnippet
