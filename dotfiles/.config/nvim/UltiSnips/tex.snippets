@@ -65,8 +65,12 @@ endsnippet
 snippet template-min "Plantilla minima"
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
-\title{$1}
+\usepackage[$1]{babel}
+\usepackage{indentfirst}
+
+\title{$2}
 \author{DPV}
 \date{}
 
@@ -74,7 +78,7 @@ snippet template-min "Plantilla minima"
 
 \maketitle
 
-$2
+$3
 
 
 
@@ -85,7 +89,11 @@ endsnippet
 snippet template-max "Plantilla completa"
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{mhchem}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+
+\usepackage[$1]{babel}
+\usepackage{indentfirst}
 
 \usepackage{import}
 \usepackage{xifthen}
@@ -99,7 +107,7 @@ snippet template-max "Plantilla completa"
     \import{./figures/}{#1.pdf_tex}
 }
 
-\title{$1}
+\title{$2}
 \author{DPV}
 \date{}     
        
@@ -107,7 +115,7 @@ snippet template-max "Plantilla completa"
                 
 \maketitle
           
-$2
+$3
   
 
 
@@ -147,4 +155,28 @@ snippet img "Inserir imatge"
   \caption{$1}  
   \label{fig:$1}
 \end{figure}
+endsnippet
+
+snippet -> "Fletxa senzilla dreta"
+$\rightarrow$ 
+endsnippet
+
+snippet --> "Fletxa llarga dreta"
+$\longrightarrow$ 
+endsnippet
+
+snippet => "Fletxa doble dreta"
+$\Rightarrow$ 
+endsnippet
+
+snippet ==> "Fletxa llarga doble dreta"
+$\Longrightarrow$ 
+endsnippet
+
+snippet ->* "Fletxa cap amunt"
+$\uparrow$ 
+endsnippet
+
+snippet ->_ "Fletxa cap aball"
+$\downarrow$ 
 endsnippet
